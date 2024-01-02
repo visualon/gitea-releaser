@@ -6,8 +6,8 @@
   "type": "module",
   "bin": "./src/index.js",
   "scripts": {
-    "postinstall": "husky install",
     "lint:prettier": "prettier --cache --check --ignore-unknown .",
+    "prepare": "husky install",
     "prettier:fix": "prettier --cache --write --ignore-unknown .",
     "start": "node src/index.js"
   },
