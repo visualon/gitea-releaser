@@ -72,7 +72,7 @@ pipeline {
 
       steps {
         sh 'echo \'//forgejo.visualon.de/:_authToken=${GITEA_TOKEN}\' >> ~/.npmrc'
-        sh 'pnpm version ${TAG_NAME}'
+        sh 'pnpm version ${TAG_NAME#v}'
         sh 'pnpm publish'
         sh 'pnpm start'
       }
