@@ -1,0 +1,28 @@
+/.git/
+/coverage/
+/docs/
+/node_modules/
+
+obj/
+bin/
+/tmp/
+
+/sp/
+/src/
+/test/
+/Client/
+
+libs/scripting/src/lib/placeholder/PlaceholderScriptLexer.ts
+libs/scripting/src/lib/placeholder/PlaceholderScriptParser.ts
+
+# angular
+/.angular/
+/dist/
+/.nx/cache
+
+# yarn v2+
+.pnp.*
+.yarn/*
+
+
+/.pnpm-store

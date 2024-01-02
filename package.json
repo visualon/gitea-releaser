@@ -1,0 +1,32 @@
+{
+  "name": "@visualon/gitea-releaser",
+  "version": "0.0.0-PLACEHOLDER",
+  "license": "MIT",
+  "author": "VisualOn GmbH",
+  "type": "module",
+  "bin": "./src/index.js",
+  "scripts": {
+    "postinstall": "husky install",
+    "lint:prettier": "prettier --cache --check --ignore-unknown .",
+    "prettier:fix": "prettier --cache --write --ignore-unknown .",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "clipanion": "4.0.0-rc.2",
+    "conventional-changelog-conventionalcommits": "7.0.2",
+    "conventional-changelog-core": "7.0.0"
+  },
+  "devDependencies": {
+    "@types/conventional-changelog-core": "4.2.7",
+    "husky": "8.0.3",
+    "lint-staged": "15.2.0",
+    "markdownlint-cli2": "0.11.0",
+    "prettier": "3.1.1",
+    "prettier-plugin-packagejson": "2.4.7"
+  },
+  "packageManager": "pnpm@8.13.1",
+  "engines": {
+    "node": "^18.12.0 || >=20.0.0",
+    "pnpm": "^8.0.0"
+  }
+}

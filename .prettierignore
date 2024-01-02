@@ -1,0 +1,27 @@
+# Add files here to ignore them from prettier formatting
+yarn.lock
+/.git/
+
+libs/scripting/src/lib/placeholder/PlaceholderScriptLexer.ts
+libs/scripting/src/lib/placeholder/PlaceholderScriptParser.ts
+
+bin/
+obj/
+coverage/
+.coverage/
+dist/
+/.angular/
+/tmp/
+/.vs/
+node_modules/
+
+# yarn v2+
+/.yarn/*
+/.pnp.*
+
+.eslintcache
+
+/.nx/cache
+
+pnpm-lock.yaml
+/.pnpm-store

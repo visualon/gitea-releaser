@@ -1,0 +1,168 @@
+{
+  "root": true,
+  "plugins": ["@nx", "jest"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["plugin:@nx/typescript"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx", "*.mjs"],
+      "extends": ["plugin:@nx/javascript"],
+      "rules": {}
+    },
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx", "*.mjs"],
+      "parserOptions": {
+        "project": ["./tsconfig.*?.json"],
+        "extraFileExtensions": [".mjs"]
+      },
+      "plugins": ["@angular-eslint/eslint-plugin", "@typescript-eslint"],
+      "extends": [
+        "eslint:recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript",
+        "plugin:jest/recommended",
+        "plugin:jest/style",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:promise/recommended",
+        "plugin:jest-formatting/recommended",
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "prettier"
+      ],
+      "settings": {
+        "import/resolver": {
+          "typescript": {
+            "project": "./tsconfig.base.json"
+          }
+        }
+      },
+      "rules": { "import/no-cycle": 2 }
+    },
+    {
+      "files": ["*.ts"],
+      "rules": {
+        "@typescript-eslint/explicit-member-accessibility": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/interface-name-prefix": 0,
+        "@typescript-eslint/no-empty-interface": [
+          "error",
+          {
+            "allowSingleExtends": true
+          }
+        ],
+        "@typescript-eslint/no-parameter-properties": "off",
+        "@typescript-eslint/no-unused-vars": [
+          2,
+          {
+            "vars": "all",
+            "args": "after-used",
+            "ignoreRestSiblings": false,
+            "argsIgnorePattern": "^_"
+          }
+        ],
+        "@typescript-eslint/no-unsafe-member-access": 1,
+        "@typescript-eslint/no-unsafe-assignment": 1,
+        "@typescript-eslint/no-redundant-type-constituents": 1,
+        "@typescript-eslint/no-base-to-string": 1,
+        "curly": [2, "all"],
+        "no-restricted-imports": [
+          "error",
+          {
+            "paths": ["lodash"]
+          }
+        ],
+        "import/default": 0,
+        "import/named": 0,
+        "import/namespace": 0,
+        "import/no-named-as-default-member": 0,
+        "import/order": [
+          "error",
+          {
+            "alphabetize": {
+              "order": "asc"
+            }
+          }
+        ],
+        "sort-imports": [
+          "error",
+          {
+            "ignoreCase": false,
+            "ignoreDeclarationSort": true,
+            "ignoreMemberSort": false,
+            "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["jest.*.{js,mjs}", "*.config.{js,mjs}", "tools/**/*.mjs"],
+      "env": {
+        "node": true
+      },
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-unsafe-assignment": 0,
+        "@typescript-eslint/no-var-requires": 0,
+        "@typescript-eslint/restrict-template-expressions": 0,
+        "@typescript-eslint/no-unsafe-return": 0,
+        "@typescript-eslint/no-unsafe-call": 0,
+        "@typescript-eslint/no-unsafe-member-access": 0
+      }
+    },
+    {
+      "files": ["__mocks__/**.js"],
+      "env": {
+        "node": true
+      }
+    },
+    {
+      "files": ["{libs,apps}/**/*.ts"],
+      "env": {
+        "browser": true
+      },
+      "rules": {
+        "@typescript-eslint/restrict-template-expressions": [
+          "error",
+          {
+            "allowBoolean": true,
+            "allowNullish": true
+          }
+        ]
+      }
+    },
+    {
+      "files": ["{libs,apps}/**/*.spec.ts"],
+      "env": {
+        "jest/globals": true,
+        "node": true
+      },
+      "rules": {
+        "@nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency": true,
+            "allow": [],
+            "depConstraints": [
+              {
+                "sourceTag": "*",
+                "onlyDependOnLibsWithTags": ["*"]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.html"],
+      "parser": "@angular-eslint/template-parser",
+      "plugins": ["@angular-eslint/template"],
+      "rules": {}
+    }
+  ]
+}
