@@ -71,7 +71,7 @@ pipeline {
       }
 
       steps {
-        sh 'pnpm config set -g \'//forgejo.visualon.de/:_authToken\' \'${GITEA_TOKEN}\''
+        sh 'echo \'//forgejo.visualon.de/api/packages/vt/npm/:_authToken=${GITEA_TOKEN}\' >> ~/.npmrc'
         sh 'pnpm version ${TAG_NAME#v}'
         sh 'pnpm publish'
         sh 'pnpm start'
