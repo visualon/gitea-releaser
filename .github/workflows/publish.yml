@@ -17,22 +17,30 @@ jobs:
 
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        with:
+          fetch-depth: 0 # Important for changelog
+          filter: blob:none # We don't need all blobs
+
       - run: corepack enable
       - uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
           node-version-file: .node-version
           registry-url: https://registry.npmjs.org/
       - run: pnpm install
-      - run: pnpm version ${GITHUB_REF_NAME#v}
+
+      - run: echo VERSION=${GITHUB_REF_NAME#v} >> $GITHUB_ENV
+      - run: pnpm version ${VERSION}
       - name: Generate changelog with git-cliff
         uses: tj-actions/git-cliff@v1.4.2
         with:
           args: --latest --strip all
           output: 'CHANGELOG.md'
+
       - run: pnpm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       - uses: ncipollo/release-action@6c75be85e571768fa31b40abf38de58ba0397db5 # v1.13.0
         with:
           bodyFile: 'CHANGELOG.md'
+          name: ${{ env.VERSION }}
           prerelease: ${{ contains(github.ref_name, '-') }}
