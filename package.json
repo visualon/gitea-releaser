@@ -9,6 +9,13 @@
     "conventional-commits",
     "conventional-changelog"
   ],
+  "bugs": {
+    "url": "https://github.com/visualon/gitea-releaser/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/visualon/gitea-releaser.git"
+  },
   "license": "MIT",
   "author": "VisualOn GmbH <info@visualon.de>",
   "contributors": [
