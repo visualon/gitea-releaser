@@ -24,9 +24,15 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: pnpm install
       - run: pnpm version ${GITHUB_REF_NAME#v}
+      - name: Generate changelog with git-cliff
+        uses: tj-actions/git-cliff@v1.4.2
+        with:
+          args: --latest --strip all
+          output: 'CHANGELOG.md'
       - run: pnpm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       - uses: ncipollo/release-action@6c75be85e571768fa31b40abf38de58ba0397db5 # v1.13.0
         with:
-          generateReleaseNotes: true
+          bodyFile: 'CHANGELOG.md'
+          prerelease: ${{ contains(github.ref_name, '-') }}
