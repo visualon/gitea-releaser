@@ -27,6 +27,6 @@ jobs:
       - run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-      - uses: ncipollo/release-action@v1.13.0
+      - uses: ncipollo/release-action@6c75be85e571768fa31b40abf38de58ba0397db5 # v1.13.0
         with:
           generateReleaseNotes: true
