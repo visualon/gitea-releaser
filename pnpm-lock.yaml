@@ -99,24 +99,24 @@ packages:
     resolution: {integrity: sha512-owT5zzi5tfWkck1DC000YEs/yzNgTs1NGj3D2+SofHgGFNQAFeurz6uc/5di+ygSBu+CuHgHXbAkchdmCc9RuQ==}
     dependencies:
       '@types/conventional-changelog-writer': 4.0.10
-      '@types/conventional-commits-parser': 3.0.6
+      '@types/conventional-commits-parser': 5.0.0
       '@types/conventional-recommended-bump': 9.0.3
       '@types/git-raw-commits': 2.0.4
-      '@types/node': 20.11.19
+      '@types/node': 20.11.20
       '@types/normalize-package-data': 2.4.4
     dev: true
 
   /@types/conventional-changelog-writer@4.0.10:
     resolution: {integrity: sha512-EK654IW1SBqTZSzN9+PlB6SKSYlDhsrCv1olfeEXvt/FHcmd7kvFWW0cFvMtnWalR/D7baYzY3FJ2TSt7UUySg==}
     dependencies:
-      '@types/conventional-commits-parser': 3.0.6
-      '@types/node': 20.11.19
+      '@types/conventional-commits-parser': 5.0.0
+      '@types/node': 20.11.20
     dev: true
 
-  /@types/conventional-commits-parser@3.0.6:
-    resolution: {integrity: sha512-z4crlplLzL9uA5kbE4ZghAf5RbrEr1UL/uNGGgxYbJjI0jRBjuYKuasbo13ANZsSapLTM2DLZk6LDcjemow4qQ==}
+  /@types/conventional-commits-parser@5.0.0:
+    resolution: {integrity: sha512-loB369iXNmAZglwWATL+WRe+CRMmmBPtpolYzIebFaX4YA3x+BEfLqhUAV9WanycKI3TG1IMr5bMJDajDKLlUQ==}
     dependencies:
-      '@types/node': 20.11.19
+      '@types/node': 20.11.20
     dev: true
 
   /@types/conventional-recommended-bump@9.0.3:
@@ -124,17 +124,17 @@ packages:
     dependencies:
       '@types/conventional-changelog-core': 4.2.7
       '@types/conventional-changelog-writer': 4.0.10
-      '@types/conventional-commits-parser': 3.0.6
+      '@types/conventional-commits-parser': 5.0.0
     dev: true
 
   /@types/git-raw-commits@2.0.4:
     resolution: {integrity: sha512-PYmTK156j6TilbwtnO2JErH4TCC1izpgP3kRE3KUX35bjBOD2A+syCGeercqHXBcM6wL+DU0WbJB2Gz8fPR+8A==}
     dependencies:
-      '@types/node': 20.11.19
+      '@types/node': 20.11.20
     dev: true
 
-  /@types/node@20.11.19:
-    resolution: {integrity: sha512-7xMnVEcZFu0DikYjWOlRq7NTPETrm7teqUT2WkQjrTIkEgUyyGdWsj/Zg8bEJt5TNklzbPD1X3fqfsHw3SpapQ==}
+  /@types/node@20.11.20:
+    resolution: {integrity: sha512-7/rR21OS+fq8IyHTgtLkDK949uzsa6n8BkziAKtPVpugIkO6D+/ooXMvzXxDnZrmtXVfjb1bKQafYpb8s89LOg==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -391,7 +391,7 @@ packages:
       human-signals: 5.0.0
       is-stream: 3.0.0
       merge-stream: 2.0.0
-      npm-run-path: 5.2.0
+      npm-run-path: 5.3.0
       onetime: 6.0.0
       signal-exit: 4.1.0
       strip-final-newline: 3.0.0
@@ -817,8 +817,8 @@ packages:
       validate-npm-package-license: 3.0.4
     dev: false
 
-  /npm-run-path@5.2.0:
-    resolution: {integrity: sha512-W4/tgAXFqFA0iL7fk0+uQ3g7wkL8xJmx3XdK0VGb4cHW//eZTtKGvFBBoRKVTpY7n6ze4NL9ly7rgXcHufqXKg==}
+  /npm-run-path@5.3.0:
+    resolution: {integrity: sha512-ppwTtiJZq0O/ai0z7yfudtBpWIoxM8yE6nHi1X47eFR2EWORqfbu6CnPlNsjeN683eT0qG6H/Pyf9fCcvjnnnQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       path-key: 4.0.0
@@ -933,7 +933,7 @@ packages:
     dependencies:
       find-up: 6.3.0
       read-pkg: 8.1.0
-      type-fest: 4.10.2
+      type-fest: 4.10.3
     dev: false
 
   /read-pkg@8.1.0:
@@ -943,7 +943,7 @@ packages:
       '@types/normalize-package-data': 2.4.4
       normalize-package-data: 6.0.0
       parse-json: 7.1.1
-      type-fest: 4.10.2
+      type-fest: 4.10.3
     dev: false
 
   /restore-cursor@4.0.0:
@@ -1142,8 +1142,8 @@ packages:
     resolution: {integrity: sha512-tLq3bSNx+xSpwvAJnzrK0Ep5CLNWjvFTOp71URMaAEWBfRb9nnJiBoUe0tF8bI4ZFO3omgBR6NvnbzVUT3Ly4g==}
     engines: {node: '>=14.16'}
 
-  /type-fest@4.10.2:
-    resolution: {integrity: sha512-anpAG63wSpdEbLwOqH8L84urkL6PiVIov3EMmgIhhThevh9aiMQov+6Btx0wldNcvm4wV+e2/Rt1QdDwKHFbHw==}
+  /type-fest@4.10.3:
+    resolution: {integrity: sha512-JLXyjizi072smKGGcZiAJDCNweT8J+AuRxmPZ1aG7TERg4ijx9REl8CNhbr36RV4qXqL1gO1FF9HL8OkVmmrsA==}
     engines: {node: '>=16'}
     dev: false
 
