@@ -103,7 +103,7 @@ packages:
       '@types/conventional-commits-parser': 5.0.0
       '@types/conventional-recommended-bump': 9.0.3
       '@types/git-raw-commits': 2.0.4
-      '@types/node': 20.11.30
+      '@types/node': 20.12.2
       '@types/normalize-package-data': 2.4.4
     dev: true
 
@@ -111,13 +111,13 @@ packages:
     resolution: {integrity: sha512-EK654IW1SBqTZSzN9+PlB6SKSYlDhsrCv1olfeEXvt/FHcmd7kvFWW0cFvMtnWalR/D7baYzY3FJ2TSt7UUySg==}
     dependencies:
       '@types/conventional-commits-parser': 5.0.0
-      '@types/node': 20.11.30
+      '@types/node': 20.12.2
     dev: true
 
   /@types/conventional-commits-parser@5.0.0:
     resolution: {integrity: sha512-loB369iXNmAZglwWATL+WRe+CRMmmBPtpolYzIebFaX4YA3x+BEfLqhUAV9WanycKI3TG1IMr5bMJDajDKLlUQ==}
     dependencies:
-      '@types/node': 20.11.30
+      '@types/node': 20.12.2
     dev: true
 
   /@types/conventional-recommended-bump@9.0.3:
@@ -131,11 +131,11 @@ packages:
   /@types/git-raw-commits@2.0.4:
     resolution: {integrity: sha512-PYmTK156j6TilbwtnO2JErH4TCC1izpgP3kRE3KUX35bjBOD2A+syCGeercqHXBcM6wL+DU0WbJB2Gz8fPR+8A==}
     dependencies:
-      '@types/node': 20.11.30
+      '@types/node': 20.12.2
     dev: true
 
-  /@types/node@20.11.30:
-    resolution: {integrity: sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw==}
+  /@types/node@20.12.2:
+    resolution: {integrity: sha512-zQ0NYO87hyN6Xrclcqp7f8ZbXNbRfoGWNcMvHTPQp9UUrwI0mI7XBz+cu7/W6/VClYo2g63B0cjull/srU7LgQ==}
     dependencies:
       undici-types: 5.26.5
     dev: true
