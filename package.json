@@ -41,7 +41,7 @@
     "@types/conventional-changelog-core": "4.2.7",
     "husky": "9.0.11",
     "lint-staged": "15.2.2",
-    "markdownlint-cli2": "0.12.1",
+    "markdownlint-cli2": "0.13.0",
     "prettier": "3.2.5",
     "prettier-plugin-packagejson": "2.4.14"
   },
