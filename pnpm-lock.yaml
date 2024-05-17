@@ -17,8 +17,8 @@ dependencies:
 
 devDependencies:
   '@types/conventional-changelog-core':
-    specifier: 4.2.7
-    version: 4.2.7
+    specifier: 4.2.8
+    version: 4.2.8
   husky:
     specifier: 9.0.11
     version: 9.0.11
@@ -96,8 +96,8 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
-  /@types/conventional-changelog-core@4.2.7:
-    resolution: {integrity: sha512-owT5zzi5tfWkck1DC000YEs/yzNgTs1NGj3D2+SofHgGFNQAFeurz6uc/5di+ygSBu+CuHgHXbAkchdmCc9RuQ==}
+  /@types/conventional-changelog-core@4.2.8:
+    resolution: {integrity: sha512-1hA2HeaQomDGq9yOkl1EHfCgWJcYphKB3otr398Ta/sjOTQS7a/Saf9RDEnQg4zSBYJfAzMzZlY5lIIh2sAuqA==}
     dependencies:
       '@types/conventional-changelog-writer': 4.0.10
       '@types/conventional-commits-parser': 5.0.0
@@ -123,7 +123,7 @@ packages:
   /@types/conventional-recommended-bump@9.0.3:
     resolution: {integrity: sha512-rOZiRkTRNAPAqBotvm8+VTzILJMnMuad52/VhSjOVTP9Mrn3K+EiSeii/YC/FiPTp2mBTo45D9I3H6z6+EOfsw==}
     dependencies:
-      '@types/conventional-changelog-core': 4.2.7
+      '@types/conventional-changelog-core': 4.2.8
       '@types/conventional-changelog-writer': 4.0.10
       '@types/conventional-commits-parser': 5.0.0
     dev: true
