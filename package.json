@@ -42,7 +42,7 @@
     "husky": "9.0.11",
     "lint-staged": "15.2.6",
     "markdownlint-cli2": "0.13.0",
-    "prettier": "3.3.1",
+    "prettier": "3.3.2",
     "prettier-plugin-packagejson": "2.5.0"
   },
   "packageManager": "pnpm@8.15.8",
