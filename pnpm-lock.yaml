@@ -121,7 +121,7 @@ packages:
       '@types/conventional-commits-parser': 5.0.0
       '@types/conventional-recommended-bump': 10.0.0
       '@types/git-raw-commits': 2.0.4
-      '@types/node': 22.5.0
+      '@types/node': 22.5.2
       '@types/normalize-package-data': 2.4.4
     dev: true
 
@@ -129,13 +129,13 @@ packages:
     resolution: {integrity: sha512-EK654IW1SBqTZSzN9+PlB6SKSYlDhsrCv1olfeEXvt/FHcmd7kvFWW0cFvMtnWalR/D7baYzY3FJ2TSt7UUySg==}
     dependencies:
       '@types/conventional-commits-parser': 5.0.0
-      '@types/node': 22.5.0
+      '@types/node': 22.5.2
     dev: true
 
   /@types/conventional-commits-parser@5.0.0:
     resolution: {integrity: sha512-loB369iXNmAZglwWATL+WRe+CRMmmBPtpolYzIebFaX4YA3x+BEfLqhUAV9WanycKI3TG1IMr5bMJDajDKLlUQ==}
     dependencies:
-      '@types/node': 22.5.0
+      '@types/node': 22.5.2
     dev: true
 
   /@types/conventional-recommended-bump@10.0.0:
@@ -148,11 +148,11 @@ packages:
   /@types/git-raw-commits@2.0.4:
     resolution: {integrity: sha512-PYmTK156j6TilbwtnO2JErH4TCC1izpgP3kRE3KUX35bjBOD2A+syCGeercqHXBcM6wL+DU0WbJB2Gz8fPR+8A==}
     dependencies:
-      '@types/node': 22.5.0
+      '@types/node': 22.5.2
     dev: true
 
-  /@types/node@22.5.0:
-    resolution: {integrity: sha512-DkFrJOe+rfdHTqqMg0bSNlGlQ85hSoh2TPzZyhHsXnMtligRWpxUySiyw8FY14ITt24HVCiQPWxS3KO/QlGmWg==}
+  /@types/node@22.5.2:
+    resolution: {integrity: sha512-acJsPTEqYqulZS/Yp/S3GgeE6GZ0qYODUR8aVr/DkhHQ8l9nd4j5x1/ZJy9/gHrRlFMqkO6i0I3E27Alu4jjPg==}
     dependencies:
       undici-types: 6.19.8
     dev: true
@@ -410,8 +410,8 @@ packages:
       is-obj: 2.0.0
     dev: false
 
-  /emoji-regex@10.3.0:
-    resolution: {integrity: sha512-QpLs9D9v9kArv4lfDEgg1X/gN5XLnf/A6l9cs8SPZLRZR3ZkY9+kwIQTxm+fsSej5UMYGE8fdoaZVIBlqG0XTw==}
+  /emoji-regex@10.4.0:
+    resolution: {integrity: sha512-EC+0oUMY1Rqm4O6LLrgjtYDvcVYTy7chDnM4Q7030tP4Kwj3u/pR6gP9ygnp2CJMK5Gq+9Q2oqmrFJAz01DXjw==}
     dev: true
 
   /entities@4.5.0:
@@ -564,7 +564,7 @@ packages:
       source-map: 0.6.1
       wordwrap: 1.0.0
     optionalDependencies:
-      uglify-js: 3.19.2
+      uglify-js: 3.19.3
     dev: false
 
   /has-flag@3.0.0:
@@ -988,7 +988,7 @@ packages:
     dependencies:
       find-up: 6.3.0
       read-pkg: 8.1.0
-      type-fest: 4.25.0
+      type-fest: 4.26.0
     dev: false
 
   /read-pkg@8.1.0:
@@ -998,7 +998,7 @@ packages:
       '@types/normalize-package-data': 2.4.4
       normalize-package-data: 6.0.2
       parse-json: 7.1.1
-      type-fest: 4.25.0
+      type-fest: 4.26.0
     dev: false
 
   /restore-cursor@5.1.0:
@@ -1131,7 +1131,7 @@ packages:
     resolution: {integrity: sha512-tsaTIkKW9b4N+AEj+SVA+WhJzV7/zMhcSu78mLKWSk7cXMOSHsBKFWUs0fWwq8QyK3MgJBQRX6Gbi4kYbdvGkQ==}
     engines: {node: '>=18'}
     dependencies:
-      emoji-regex: 10.3.0
+      emoji-regex: 10.4.0
       get-east-asian-width: 1.2.0
       strip-ansi: 7.1.0
     dev: true
@@ -1192,8 +1192,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: false
 
-  /type-fest@4.25.0:
-    resolution: {integrity: sha512-bRkIGlXsnGBRBQRAY56UXBm//9qH4bmJfFvq83gSz41N282df+fjy8ofcEgc1sM8geNt5cl6mC2g9Fht1cs8Aw==}
+  /type-fest@4.26.0:
+    resolution: {integrity: sha512-OduNjVJsFbifKb57UqZ2EMP1i4u64Xwow3NYXUtBbD4vIwJdQd4+xl8YDou1dlm4DVrtwT/7Ky8z8WyCULVfxw==}
     engines: {node: '>=16'}
     dev: false
 
@@ -1201,8 +1201,8 @@ packages:
     resolution: {integrity: sha512-ARDJmphmdvUk6Glw7y9DQ2bFkKBHwQHLi2lsaH6PPmz/Ka9sFOBsBluozhDltWmnv9u/cF6Rt87znRTPV+yp/A==}
     dev: true
 
-  /uglify-js@3.19.2:
-    resolution: {integrity: sha512-S8KA6DDI47nQXJSi2ctQ629YzwOVs+bQML6DAtvy0wgNdpi+0ySpQK0g2pxBq2xfF2z3YCscu7NNA8nXT9PlIQ==}
+  /uglify-js@3.19.3:
+    resolution: {integrity: sha512-v3Xu+yuwBXisp6QYTcH4UbH+xYJXqnq2m/LtQVWKWzYc1iehYnLixoQDN9FH6/j9/oybfd6W9Ghwkl8+UMKTKQ==}
     engines: {node: '>=0.8.0'}
     hasBin: true
     requiresBuild: true
