@@ -99,8 +99,8 @@ packages:
   '@types/git-raw-commits@2.0.4':
     resolution: {integrity: sha512-PYmTK156j6TilbwtnO2JErH4TCC1izpgP3kRE3KUX35bjBOD2A+syCGeercqHXBcM6wL+DU0WbJB2Gz8fPR+8A==}
 
-  '@types/node@22.8.7':
-    resolution: {integrity: sha512-LidcG+2UeYIWcMuMUpBKOnryBWG/rnmOHQR5apjn8myTQcx3rinFRn7DcIFhMnS0PPFSC6OafdIKEad0lj6U0Q==}
+  '@types/node@22.9.0':
+    resolution: {integrity: sha512-vuyHg81vvWA1Z1ELfvLko2c8f34gyA0zaic0+Rllc5lbCnbSyuvb2Oxpm6TAUAC/2xZN3QGqxBNggD1nNR2AfQ==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -204,8 +204,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  cross-spawn@7.0.3:
-    resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
+  cross-spawn@7.0.5:
+    resolution: {integrity: sha512-ZVJrKKYunU38/76t0RMOulHOnUcbU9GbpWKAOZ0mhjr7CX6FVrH+4FrAapSOekrgFQ3f/8gwMEuIft0aKq6Hug==}
     engines: {node: '>= 8'}
 
   dargs@8.1.0:
@@ -775,17 +775,17 @@ snapshots:
       '@types/conventional-commits-parser': 5.0.0
       '@types/conventional-recommended-bump': 10.0.3
       '@types/git-raw-commits': 2.0.4
-      '@types/node': 22.8.7
+      '@types/node': 22.9.0
       '@types/normalize-package-data': 2.4.4
 
   '@types/conventional-changelog-writer@4.0.10':
     dependencies:
       '@types/conventional-commits-parser': 5.0.0
-      '@types/node': 22.8.7
+      '@types/node': 22.9.0
 
   '@types/conventional-commits-parser@5.0.0':
     dependencies:
-      '@types/node': 22.8.7
+      '@types/node': 22.9.0
 
   '@types/conventional-recommended-bump@10.0.3':
     dependencies:
@@ -793,9 +793,9 @@ snapshots:
 
   '@types/git-raw-commits@2.0.4':
     dependencies:
-      '@types/node': 22.8.7
+      '@types/node': 22.9.0
 
-  '@types/node@22.8.7':
+  '@types/node@22.9.0':
     dependencies:
       undici-types: 6.19.8
 
@@ -901,7 +901,7 @@ snapshots:
       conventional-commits-parser: 6.0.0
       meow: 13.2.0
 
-  cross-spawn@7.0.3:
+  cross-spawn@7.0.5:
     dependencies:
       path-key: 3.1.1
       shebang-command: 2.0.0
@@ -939,7 +939,7 @@ snapshots:
 
   execa@8.0.1:
     dependencies:
-      cross-spawn: 7.0.3
+      cross-spawn: 7.0.5
       get-stream: 8.0.1
       human-signals: 5.0.0
       is-stream: 3.0.0
