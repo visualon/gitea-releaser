@@ -19,8 +19,8 @@ importers:
         version: 8.0.0(conventional-commits-filter@5.0.0)
     devDependencies:
       '@types/conventional-changelog-core':
-        specifier: 4.2.8
-        version: 4.2.8
+        specifier: 8.0.0
+        version: 8.0.0
       husky:
         specifier: 9.1.7
         version: 9.1.7
@@ -95,8 +95,8 @@ packages:
     resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
     engines: {node: '>=18'}
 
-  '@types/conventional-changelog-core@4.2.8':
-    resolution: {integrity: sha512-1hA2HeaQomDGq9yOkl1EHfCgWJcYphKB3otr398Ta/sjOTQS7a/Saf9RDEnQg4zSBYJfAzMzZlY5lIIh2sAuqA==}
+  '@types/conventional-changelog-core@8.0.0':
+    resolution: {integrity: sha512-YlEJa0/3fBRw98Y1IT16pepMdCydQajeIHd8Qlwex50AN+JHNUyqczW+Zox+ch7U8dSOCnAJJt8YpijibvmdGQ==}
 
   '@types/conventional-changelog-writer@4.0.10':
     resolution: {integrity: sha512-EK654IW1SBqTZSzN9+PlB6SKSYlDhsrCv1olfeEXvt/FHcmd7kvFWW0cFvMtnWalR/D7baYzY3FJ2TSt7UUySg==}
@@ -836,7 +836,7 @@ snapshots:
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
-  '@types/conventional-changelog-core@4.2.8':
+  '@types/conventional-changelog-core@8.0.0':
     dependencies:
       '@types/conventional-changelog-writer': 4.0.10
       '@types/conventional-commits-parser': 5.0.1
