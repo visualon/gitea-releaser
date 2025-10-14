@@ -36,7 +36,7 @@
   "dependencies": {
     "clipanion": "4.0.0-rc.4",
     "conventional-changelog": "7.1.1",
-    "conventional-changelog-conventionalcommits": "8.0.0"
+    "conventional-changelog-conventionalcommits": "9.1.0"
   },
   "devDependencies": {
     "@containerbase/semantic-release-pnpm": "1.2.6",
