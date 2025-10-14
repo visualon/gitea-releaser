@@ -50,8 +50,7 @@ class GiteaReleaseCommand extends Command {
       return 1;
     }
 
-    const stream = getChangelog(true).setEncoding('utf8');
-    const changes = (await stream.toArray()).join('');
+    const changes = await getChangelog(true);
 
     this.context.stdout.write(`Creating release ${tag}.\n`);
     resp = await fetch(`${api}/repos/${repo}/releases`, {
