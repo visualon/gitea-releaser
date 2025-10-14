@@ -52,8 +52,6 @@ jobs:
     steps:
       - uses: containerbase/internal-tools/setup@0a2a6d34b860b45e2a28771783f9b68daa175876 # v3.13.19
 
-      - run: pnpm install
-
       - run: pnpm lint:prettier
 
       - run: pnpm pack
@@ -74,8 +72,6 @@ jobs:
       - uses: containerbase/internal-tools/setup@0a2a6d34b860b45e2a28771783f9b68daa175876 # v3.13.19
         with:
           checkout: false
-
-      - run: pnpm install
 
       # - run: pnpm build
 
