@@ -35,7 +35,7 @@ concurrency:
   cancel-in-progress: ${{ github.event_name == 'pull_request' || (github.ref_name != github.event.repository.default_branch && github.ref_name != 'next' && !startsWith(github.ref_name, 'maint/'))  }}
 
 jobs:
-  test:
+  setup:
     runs-on: ubuntu-24.04
 
     steps:
@@ -43,14 +43,48 @@ jobs:
         with:
           save-cache: true
 
+  lint:
+    needs:
+      - setup
+
+    runs-on: ubuntu-24.04
+
+    steps:
+      - uses: containerbase/internal-tools/setup@0a2a6d34b860b45e2a28771783f9b68daa175876 # v3.13.19
+
       - run: pnpm install
 
       - run: pnpm lint:prettier
-      - run: pnpm test
+
       - run: pnpm pack
+
+  test:
+    needs:
+      - setup
+
+    runs-on: ubuntu-24.04
+
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          fetch-depth: 0 # zero stands for full checkout, which is required for semantic-release
+          filter: blob:none # we don't need all blobs, only the full tree
+          show-progress: false
+
+      - uses: containerbase/internal-tools/setup@0a2a6d34b860b45e2a28771783f9b68daa175876 # v3.13.19
+        with:
+          checkout: false
+
+      - run: pnpm install
+
+      # - run: pnpm build
+
+      - run: pnpm test
 
   release:
     needs:
+      - setup
+      - lint
       - test
 
     if: github.repository == 'visualon/gitea-releaser' && github.event_name != 'pull_request'
