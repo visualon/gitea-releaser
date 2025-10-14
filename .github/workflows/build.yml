@@ -46,6 +46,7 @@ jobs:
       - run: pnpm install
 
       - run: pnpm lint:prettier
+      - run: pnpm test
       - run: pnpm pack
 
   release:

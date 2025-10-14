@@ -30,7 +30,8 @@
     "lint:prettier": "prettier --cache --check --ignore-unknown .",
     "prepare": "husky",
     "prettier:fix": "prettier --cache --write --ignore-unknown .",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test": "node --test test/**/*.js"
   },
   "dependencies": {
     "clipanion": "4.0.0-rc.4",

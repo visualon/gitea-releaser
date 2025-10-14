@@ -4,7 +4,7 @@ import { getChangelog } from '../src/changelog/util.js';
 
 describe('index', () => {
   test('works', async () => {
-    const changes = await getChangelog(false);
+    const changes = await getChangelog(true);
     console.error(changes);
     assert.notEqual(changes, '');
   });
