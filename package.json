@@ -39,7 +39,7 @@
     "conventional-changelog-conventionalcommits": "9.1.0"
   },
   "devDependencies": {
-    "@containerbase/semantic-release-pnpm": "1.3.1",
+    "@containerbase/semantic-release-pnpm": "1.3.2",
     "@types/node": "22.18.13",
     "husky": "9.1.7",
     "lint-staged": "16.2.6",
