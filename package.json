@@ -45,7 +45,7 @@
     "lint-staged": "16.2.7",
     "markdownlint-cli2": "0.20.0",
     "prettier": "3.8.0",
-    "prettier-plugin-packagejson": "2.5.21",
+    "prettier-plugin-packagejson": "2.5.22",
     "semantic-release": "25.0.2"
   },
   "packageManager": "pnpm@10.28.0",
