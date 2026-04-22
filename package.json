@@ -43,7 +43,7 @@
     "@types/node": "22.19.17",
     "husky": "9.1.7",
     "lint-staged": "16.4.0",
-    "markdownlint-cli2": "0.22.0",
+    "markdownlint-cli2": "0.22.1",
     "prettier": "3.8.3",
     "prettier-plugin-packagejson": "3.0.2",
     "semantic-release": "25.0.3"
