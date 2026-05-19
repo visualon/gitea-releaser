@@ -42,7 +42,7 @@
     "@containerbase/semantic-release-pnpm": "1.4.1",
     "@types/node": "22.19.19",
     "husky": "9.1.7",
-    "lint-staged": "17.0.4",
+    "lint-staged": "17.0.5",
     "markdownlint-cli2": "0.22.1",
     "prettier": "3.8.3",
     "prettier-plugin-packagejson": "3.0.2",
