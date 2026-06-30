@@ -63,7 +63,7 @@ export async function getChangelog(onTag = false) {
   const generator = new ConventionalChangelog()
     .readPackage()
     .config(config)
-    .writer({ headerPartial: '' })
+    .writer({ headerPartial: () => '' })
     .options({ releaseCount: onTag ? 2 : 1 });
 
   // generator.options({
