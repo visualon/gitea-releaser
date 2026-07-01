@@ -15,8 +15,8 @@ importers:
         specifier: 8.0.0
         version: 8.0.0(conventional-commits-filter@6.0.0)
       conventional-changelog-conventionalcommits:
-        specifier: 10.0.0
-        version: 10.0.0
+        specifier: 10.2.0
+        version: 10.2.0
     devDependencies:
       '@containerbase/semantic-release-pnpm':
         specifier: 1.4.2
@@ -387,8 +387,8 @@ packages:
     resolution: {integrity: sha512-6gfI3otXK5Ph5DfCOI1dblr+kN3FAm5a97hYoQkqNZxOaYa5WKfXH+AnpsmS+iUH2mgVC2Cg2Qw9m5OKcmNrIg==}
     engines: {node: '>=18'}
 
-  conventional-changelog-conventionalcommits@10.0.0:
-    resolution: {integrity: sha512-MI9NHlb+21eTLJyd6c8mgH2XHGz+ZaQanCFyH1A6AGtqqbTw+w9Ren4Oi5yWFi/pDehlmbnFU1pJzRqQXTOp+w==}
+  conventional-changelog-conventionalcommits@10.2.0:
+    resolution: {integrity: sha512-UtlM9GqolY7OmlQh5L/UEVoKsTUpTgUVy1PU8JN5gl5Ydaejb7WRklGliG1SKPxxj7hzA173eG3Kt5fYWE2pmg==}
     engines: {node: '>=22'}
 
   conventional-changelog-preset-loader@6.0.0:
@@ -2043,7 +2043,7 @@ snapshots:
     dependencies:
       compare-func: 2.0.0
 
-  conventional-changelog-conventionalcommits@10.0.0:
+  conventional-changelog-conventionalcommits@10.2.0:
     dependencies:
       '@conventional-changelog/template': 1.2.0
 
