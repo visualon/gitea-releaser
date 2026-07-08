@@ -12,8 +12,8 @@ importers:
         specifier: 4.0.0-rc.4
         version: 4.0.0-rc.4(typanion@3.14.0)
       conventional-changelog:
-        specifier: 8.0.0
-        version: 8.0.0(conventional-commits-filter@6.0.1)
+        specifier: 8.0.1
+        version: 8.0.1(conventional-commits-filter@6.0.1)
       conventional-changelog-conventionalcommits:
         specifier: 10.2.0
         version: 10.2.0
@@ -405,8 +405,8 @@ packages:
     engines: {node: '>=22'}
     hasBin: true
 
-  conventional-changelog@8.0.0:
-    resolution: {integrity: sha512-vUS+Zyk+bioH71dSikZ1RbgFt3KaDcRoaxdPtv5+PNcuqEfqGuK6yVte6AuopjEAVMz8P5lhoTsFYMmHTu0jTA==}
+  conventional-changelog@8.0.1:
+    resolution: {integrity: sha512-eFdSjhL1D//s+dideWMAStBYn5nsnK0k60Op3x7urfkplqIQzByaD3dN2SNuw9G8WymCrEitdOpknFmjHoa1rw==}
     engines: {node: '>=22'}
     hasBin: true
 
@@ -2061,7 +2061,7 @@ snapshots:
       meow: 14.1.0
       semver: 7.8.5
 
-  conventional-changelog@8.0.0(conventional-commits-filter@6.0.1):
+  conventional-changelog@8.0.1(conventional-commits-filter@6.0.1):
     dependencies:
       '@conventional-changelog/git-client': 3.0.2(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.0.1)
       '@simple-libs/hosted-git-info': 2.0.0
