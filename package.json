@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "clipanion": "4.0.0-rc.4",
-    "conventional-changelog": "8.0.1",
+    "conventional-changelog": "8.1.0",
     "conventional-changelog-conventionalcommits": "10.2.1"
   },
   "devDependencies": {
