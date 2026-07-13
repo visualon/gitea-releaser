@@ -12,8 +12,8 @@ importers:
         specifier: 4.0.0-rc.4
         version: 4.0.0-rc.4(typanion@3.14.0)
       conventional-changelog:
-        specifier: 8.0.1
-        version: 8.0.1(conventional-commits-filter@6.0.1)
+        specifier: 8.1.0
+        version: 8.1.0(conventional-commits-filter@6.0.1)
       conventional-changelog-conventionalcommits:
         specifier: 10.2.1
         version: 10.2.1
@@ -409,8 +409,8 @@ packages:
     engines: {node: '>=22'}
     hasBin: true
 
-  conventional-changelog@8.0.1:
-    resolution: {integrity: sha512-eFdSjhL1D//s+dideWMAStBYn5nsnK0k60Op3x7urfkplqIQzByaD3dN2SNuw9G8WymCrEitdOpknFmjHoa1rw==}
+  conventional-changelog@8.1.0:
+    resolution: {integrity: sha512-idt1JK+3+Nt7gqH/d/sEYWdDeR+5XPov/jssmFN6XxmYSRlonTWSDWhWUPkmm0zbwYjtVdt+4My5aiPkKyvocw==}
     engines: {node: '>=22'}
     hasBin: true
 
@@ -916,10 +916,6 @@ packages:
   meow@13.2.0:
     resolution: {integrity: sha512-pxQJQzB6djGPXh08dacEloMFopsOqGVRKFPYvPOt9XDZ1HasbgDZA74CJGreSU4G3Ak7EFJGoiH2auq+yXISgA==}
     engines: {node: '>=18'}
-
-  meow@14.1.0:
-    resolution: {integrity: sha512-EDYo6VlmtnumlcBCbh1gLJ//9jvM/ndXHfVXIFrZVr6fGcwTUyCTFNTLCKuY3ffbK8L/+3Mzqnd58RojiZqHVw==}
-    engines: {node: '>=20'}
 
   merge-stream@2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
@@ -2067,16 +2063,16 @@ snapshots:
       conventional-commits-filter: 6.0.1
       semver: 7.8.5
 
-  conventional-changelog@8.0.1(conventional-commits-filter@6.0.1):
+  conventional-changelog@8.1.0(conventional-commits-filter@6.0.1):
     dependencies:
       '@conventional-changelog/git-client': 3.1.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.0)
       '@simple-libs/hosted-git-info': 2.0.0
       '@simple-libs/normalize-package-data': 1.0.0
+      argue-cli: 3.1.0
       conventional-changelog-preset-loader: 6.0.1
       conventional-changelog-writer: 9.2.0
       conventional-commits-parser: 7.1.0
       fd-package-json: 2.0.0
-      meow: 14.1.0
     transitivePeerDependencies:
       - conventional-commits-filter
 
@@ -2573,8 +2569,6 @@ snapshots:
   mdurl@2.0.0: {}
 
   meow@13.2.0: {}
-
-  meow@14.1.0: {}
 
   merge-stream@2.0.0: {}
 
