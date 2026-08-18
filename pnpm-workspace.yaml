@@ -1,1 +1,14 @@
 strictPeerDependencies: true
+dedupePeerDependents: true
+dedupePeers: true
+updateNotifier: false
+
+overrides:
+  semantic-release>conventional-changelog: 7.2.1
+  semantic-release>conventional-changelog-conventionalcommits: 9.3.1
+
+packageExtensions:
+  semantic-release:
+    dependencies:
+      conventional-changelog: ^7.0.0
+      conventional-changelog-conventionalcommits: ^9.0.0
