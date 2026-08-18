@@ -24,7 +24,7 @@
       }
     ]
   },
-  "preset": "conventionalcommits",
+  "preset": "conventionalcommits-v9",
   "presetConfig": {
     "types": [
       {
