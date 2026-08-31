@@ -1,7 +1,11 @@
-import { Command, runExit } from 'clipanion';
+import { basename } from 'node:path';
+import { Command, Option, runExit } from 'clipanion';
 import { getChangelog } from './changelog/util.js';
+import { readFile } from 'node:fs/promises';
 
 class GiteaReleaseCommand extends Command {
+  files = Option.Rest();
+
   async execute() {
     const url = new URL(process.env.GIT_URL);
     const api = `${url.origin}/api/v1`;
@@ -72,6 +76,26 @@ class GiteaReleaseCommand extends Command {
     if (!resp.ok) {
       this.context.stdout.write(`Error creating release ${tag}.\n${resp.status}: ${resp.statusText}\n`);
       return 1;
+    }
+
+    if (this.files.length) {
+      const rel = await resp.json();
+      for (const file of this.files) {
+        this.context.stdout.write(`Uploading file: ${file}`);
+        const body = new FormData();
+        body.append(file, await readFile(file));
+        resp = await fetch(`${api}/repos/${repo}/releases/${rel.id}/asset?name=${basename(file)}`, {
+          method: 'POST',
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+          body,
+        });
+        if (!resp.ok) {
+          this.context.stdout.write(`Error uploading file.\n${resp.status}: ${resp.statusText}\n`);
+          return 1;
+        }
+      }
     }
   }
 }
