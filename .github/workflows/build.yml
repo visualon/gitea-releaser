@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-      - uses: containerbase/internal-tools/setup@fd7f0cef00ac98b2ce4110a26c46624d846cf01d # v5.0.32
+      - uses: containerbase/internal-tools/setup@a216a579206031326947f48dc7e57a59d5231c8c # v5.0.35
         with:
           save-cache: true
 
@@ -50,7 +50,7 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-      - uses: containerbase/internal-tools/setup@fd7f0cef00ac98b2ce4110a26c46624d846cf01d # v5.0.32
+      - uses: containerbase/internal-tools/setup@a216a579206031326947f48dc7e57a59d5231c8c # v5.0.35
 
       - run: pnpm lint:prettier
 
@@ -69,7 +69,7 @@ jobs:
           filter: blob:none # we don't need all blobs, only the full tree
           show-progress: false
 
-      - uses: containerbase/internal-tools/setup@fd7f0cef00ac98b2ce4110a26c46624d846cf01d # v5.0.32
+      - uses: containerbase/internal-tools/setup@a216a579206031326947f48dc7e57a59d5231c8c # v5.0.35
         with:
           checkout: false
 
@@ -100,7 +100,7 @@ jobs:
           filter: blob:none # we don't need all blobs, only the full tree
           show-progress: false
 
-      - uses: containerbase/internal-tools/setup@fd7f0cef00ac98b2ce4110a26c46624d846cf01d # v5.0.32
+      - uses: containerbase/internal-tools/setup@a216a579206031326947f48dc7e57a59d5231c8c # v5.0.35
         with:
           checkout: false
 
