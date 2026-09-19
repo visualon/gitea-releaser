@@ -36,7 +36,7 @@ concurrency:
 
 jobs:
   setup:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
 
     steps:
       - uses: containerbase/internal-tools/setup@6d835adb53fec88df2bc9d4ee79a98c82fa0a3da # v5.0.39
@@ -47,7 +47,7 @@ jobs:
     needs:
       - setup
 
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
 
     steps:
       - uses: containerbase/internal-tools/setup@6d835adb53fec88df2bc9d4ee79a98c82fa0a3da # v5.0.39
@@ -60,7 +60,7 @@ jobs:
     needs:
       - setup
 
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
 
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -85,7 +85,7 @@ jobs:
 
     if: github.repository == 'visualon/gitea-releaser' && github.event_name != 'pull_request'
 
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     timeout-minutes: 10
 
     permissions:
