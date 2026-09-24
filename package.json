@@ -44,7 +44,7 @@
     "conventional-changelog-conventionalcommits-v9": "npm:conventional-changelog-conventionalcommits@9.3.1",
     "husky": "9.1.7",
     "lint-staged": "17.5.1",
-    "markdownlint-cli2": "0.23.2",
+    "markdownlint-cli2": "0.23.3",
     "prettier": "3.9.8",
     "prettier-plugin-packagejson": "3.0.2",
     "semantic-release": "25.0.9"
