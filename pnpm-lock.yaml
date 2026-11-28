@@ -23,8 +23,8 @@ importers:
         specifier: 1.4.4
         version: 1.4.4(semantic-release@25.0.9)
       '@types/node':
-        specifier: 22.20.5
-        version: 22.20.5
+        specifier: 22.20.6
+        version: 22.20.6
       conventional-changelog-conventionalcommits-v9:
         specifier: npm:conventional-changelog-conventionalcommits@9.3.1
         version: conventional-changelog-conventionalcommits@9.3.1
@@ -241,8 +241,8 @@ packages:
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
 
-  '@types/node@22.20.5':
-    resolution: {integrity: sha512-U2+DNr+wSjpsTS/wZGYHq7GcwfuSmKiKvoPvK22zwTlRhU91yOniN4qRR5KhIjvif7ysw/dz/hKmfDH0Ris4aA==}
+  '@types/node@22.20.6':
+    resolution: {integrity: sha512-vDsVXyIC4vhuGfe+eMMqJ5VP2BMqeWcbvMIoHIeE0nbY6qyrJSnxBpw2zIL7/tv55/Zf7lzKbdlq+lq+wt5N5w==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -1879,7 +1879,7 @@ snapshots:
 
   '@types/ms@2.1.0': {}
 
-  '@types/node@22.20.5':
+  '@types/node@22.20.6':
     dependencies:
       undici-types: 6.21.0
 
